@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+<xs:schema 
+	id="Hotels"
+    targetNamespace="http://tempuri.org/Hotels.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://tempuri.org/Hotels.xsd"
+    xmlns:mstns="http://tempuri.org/Hotels.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    attributeFormDefault="unqualified">
+
+	<xs:annotation>
+		<xs:documentation xml:lang="en">
+			Assignment 4 - Hotel Validator XSD Schema
+		</xs:documentation>
+	</xs:annotation>
+
+	
+	<!-- First part is defining the root element whihc should be "Hotels"-->
+	<xs:element name="Hotels" type="HotelsType"/>
+	<xs:complexType name="HotelsType">
+		<xs:sequence>
+			<!-- This contains hotel types which should be at least 1 based on Figure 1 -->
+			<xs:element name="Hotel" type="HotelType" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<!-- From the root need to make a hotel type whihc contains all nesscary info. This includes NAME, PHONE#,, AND RATING if i have time-->
+	<xs:complexType name="HotelType">
+		<xs:sequence>
+			<xs:element name="Name" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="Phone" type="PhoneType" minOccurs="1" maxOccurs="unbounded"/>
+			<xs:element name="Address" type="AddressType" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+		<!-- Include the optional rating here if i have the time -->
+		<xs:attribute name="_Rating" type="xs:decimal" use="optional"/>
+	</xs:complexType>
+	
+
+<!-- MOve futher down the tree and specify parts of the Adress, includes Number, Street,City, State, Zip-->
+<xs:complexType name="AddressType">
+	<xs:sequence>
+		<xs:element name="Number" type="xs:string" minOccurs="1" maxOccurs="1"/>
+		<xs:element name="Street" type="xs:string" minOccurs="1" maxOccurs="1"/>
+		<xs:element name="City" type="xs:string" minOccurs="1" maxOccurs="1"/>
+		<xs:element name="State" type="xs:string" minOccurs="1" maxOccurs="1"/>
+		<xs:element name="Zip" type="xs:string" minOccurs="1" maxOccurs="1"/>
+	</xs:sequence>
+	<!-- Next add the rwquired "nearest airport" attribute-->
+	<xs:attribute name="_NearestAirport" type="xs:string" use="required"/>
+</xs:complexType>
+	
+	
+<!-- Next i want to define the phonetypw just so we have proper rewstrictions and ensurte that futre use is sound and formatted right-->
+	<xs:simpleType name="PhoneType">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\d{3}\-\d{3}\-\d{4}"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+</xs:schema>
