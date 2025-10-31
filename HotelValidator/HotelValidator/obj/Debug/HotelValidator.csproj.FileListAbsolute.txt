@@ -1,0 +1,2 @@
+C:\Users\Alonzo\CSE445_Projects\HotelValidator\HotelValidator\obj\Debug\HotelValidator.csproj.AssemblyReference.cache
+C:\Users\Alonzo\CSE445_Projects\HotelValidator\HotelValidator\obj\Debug\HotelValidator.csproj.CoreCompileInputs.cache
