@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Hotels
+    xmlns="http://tempuri.org/Hotels.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://tempuri.org/Hotels.xsd https://zohernandez777.github.io/CSE445_A4/Hotels.xsd">
+
+	<!-- Arrocding to the prompt I need to include all rwquired attributres and only some optional ones. So for ten hotels all will have the nearest airport and only some will have a rating(5) -->
+
+	<!-- Will be using boking.com, hotels.com, etc to pull my information-->
+
+	<!-- First 5 will include ratings via the guide-->
+	<!--Hotel 1-->
+	<Hotel _Rating="8.9">
+		<Name>SpringHill Suites Phoenix Downtown</Name>
+		<Phone>602-307-9929</Phone>
+		<Address _NearestAirport="Phoenix Sky Harbor International Airport">
+			<Number>802</Number>
+			<Street>East Van Buren Street</Street>
+			<City>Phoenix</City>
+			<State>AZ</State>
+			<Zip>85006</Zip>
+		</Address>
+	</Hotel>
+
+	<!--Hotel 2, Has two phone numbers  and rating -->
+	<Hotel _Rating="8.1">
+		<Name>Hilton Garden Inn Phoenix Airport North</Name>
+		<Phone>833-314-4808</Phone>
+		<Phone>602-306-2323</Phone>
+		<Address _NearestAirport="Phoenix Sky Harbor International Airport">
+			<Number>3838</Number>
+			<Street>East Van Buren Street</Street>
+			<City>Phoenix</City>
+			<State>AZ</State>
+			<Zip>85008</Zip>
+		</Address>
+	</Hotel>
+
+	<!--Hotel 3-->
+	<Hotel _Rating="8.9">
+		<Name>
+			AC Hotel by Marriott Phoenix DowntownOpens
+		</Name>
+		<Phone>602-258-1771</Phone>
+		<Address _NearestAirport="Phoenix Sky Harbor International Airport">
+			<Number>414</Number>
+			<Street>North 5th Street</Street>
+			<City>Phoenix</City>
+			<State>AZ</State>
+			<Zip>85004</Zip>
+		</Address>
+	</Hotel>
+	<!--Hotel 4, ahs two phone numbers -->
+	<Hotel _Rating="9.0">
+		<Name>
+			Holiday Inn Express and Suites
+		</Name>
+		<Phone>602-698-8194</Phone>
+		<Phone>602-267-0404</Phone>
+		<Address _NearestAirport="Phoenix Sky Harbor International Airport">
+			<Number>800</Number>
+			<Street>North 44th Street</Street>
+			<City>Phoenix</City>
+			<State>AZ</State>
+			<Zip>85008</Zip>
+		</Address>
+	</Hotel>
+
+	<!--Hotel 5-->
+	<Hotel _Rating="8.9">
+		<Name>
+			Doubletree By Hilton Tucson Downtown Convention Center
+		</Name>
+		<Phone>520-372-7100</Phone>
+		<Address _NearestAirport="Tuson Iternational Airport">
+			<Number>280</Number>
+			<Street>South Church Ave</Street>
+			<City>Tucson</City>
+			<State>AZ</State>
+			<Zip>85701</Zip>
+		</Address>
+	</Hotel>
+
+
+	<!-- The rest dont inlcude ratings via assignment prompot-->
+	<!--Hotel 6-->
+	<Hotel>
+		<Name>La Quinta Inn</Name>
+		<Phone>520-573-3333</Phone>
+		<Address _NearestAirport="Wyndham Tuscon Airport">
+			<Number>7001</Number>
+			<Street>South Tucson Boulevard</Street>
+			<City>Tucson</City>
+			<State>AZ</State>
+			<Zip>85706</Zip>
+		</Address>
+	</Hotel>
+	<!--Hotel 7, containes two phone numbers -->
+	<Hotel>
+		<Name>Embassy Suites</Name>
+		<Phone>520-721-7100</Phone>
+		<Phone>520-721-4000</Phone>
+		<Address _NearestAirport="Tuson Iternational Airport">
+			<Number>6551</Number>
+			<Street>East Speedway Boulevard</Street>
+			<City>Tucson</City>
+			<State>AZ</State>
+			<Zip>85710</Zip>
+		</Address>
+	</Hotel>
+
+	<!--Hotel 8, goig to add hotels from out of state but on the west coast from here -->
+	<Hotel>
+		<Name>Hyatt House</Name>
+		<Phone>866-262-4215</Phone>
+		<Address _NearestAirport="Los Angeles International Airport">
+			<Number>5959</Number>
+			<Street>West Century Blvd</Street>
+			<City>Los Angeles</City>
+			<State>CA</State>
+			<Zip>90045</Zip>
+		</Address>
+	</Hotel>
+
+	<!--Hotel 9-->
+	<Hotel>
+		<Name>Homewood Suites</Name>
+		<Phone>801-363-6700</Phone>
+		<Phone>877-417-2905</Phone>
+		<Address _NearestAirport="Salt Lake City International Airport">
+			<Number>423</Number>
+			<Street>West 300 South</Street>
+			<City>Salt Lake City</City>
+			<State>UT</State>
+			<Zip>84101</Zip>
+		</Address>
+	</Hotel>
+
+	<!--Hotel 10-->
+
+	<Hotel>
+		<Name>Sheraton Suites</Name>
+		<Phone>214-747-3000</Phone>
+		<Address _NearestAirport="Dallas Love Field Airport">
+			<Number>2101</Number>
+			<Street>North Stemmons Freeway</Street>
+			<City>Dallas</City>
+			<State>TX</State>
+			<Zip>75207</Zip>
+		</Address>
+	</Hotel>
+</Hotels>
+	
