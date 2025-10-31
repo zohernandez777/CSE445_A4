@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!-- FIRST ERROR: Root element should be <Hotels>, but here it's singular <Hotel> -->
+<Hotel
+    xmlns="http://tempuri.org/Hotels.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://tempuri.org/Hotels.xsd https://zohernandez777.github.io/CSE445_A4/Hotels.xsd">
+
+	<!-- Arrocding to the prompt I need to include all rwquired attributres and only some optional ones. So for ten hotels all will have the nearest airport and only some will have a rating(5) -->
+
+	<!-- Will be using boking.com, hotels.com, etc to pull my information-->
+
+	<!-- First 5 will include ratings via the guide-->
+	<!--Hotel 1-->
+	<!-- The second error I need to include is a missing require attribute which will be the airport -->
+	<Hotel _Rating="8.9">
+		<Name>SpringHill Suites Phoenix Downtown</Name>
+		<Phone>602-307-9929</Phone>
+		<Address>
+			<!-- missing _NearestAirport -->
+			<Number>802</Number>
+			<Street>East Van Buren Street</Street>
+			<City>Phoenix</City>
+			<State>AZ</State>
+			<Zip>85006</Zip>
+		</Address>
+	</Hotel>
+
+	<!--Hotel 2, Has two phone numbers  and rating -->
+	<!-- The third error listed is a missing phone elemnt -->
+	<Hotel _Rating="8.1">
+		<Name>Hilton Garden Inn Phoenix Airport North</Name>
+	<!-- mnissing phone element-->
+		<Address _NearestAirport="Phoenix Sky Harbor International Airport">
+			<Number>3838</Number>
+			<Street>East Van Buren Street</Street>
+			<City>Phoenix</City>
+			<State>AZ</State>
+			<Zip>85008</Zip>
+		</Address>
+	</Hotel>
+
+	<!--Hotel 3-->
+	<!-- Error #4 should be a missing closing address tag-->
+	<Hotel _Rating="8.9">
+		<Name>
+			AC Hotel by Marriott Phoenix DowntownOpens
+		</Name>
+		<Phone>602-258-1771</Phone>
+		<Address _NearestAirport="Phoenix Sky Harbor International Airport">
+			<Number>414</Number>
+			<Street>North 5th Street</Street>
+			<City>Phoenix</City>
+			<State>AZ</State>
+			<Zip>85004</Zip>
+		<!-- Missing closing address tag-->
+	</Hotel>
+	<!--Hotel 4, ahs two names for one hotel -->
+	<Hotel _Rating="9.0">
+		<Name>Doubletree By Hilton Tucson Downtown Convention Center</Name>
+		<Name>Random Second Name I dont care about </Name>
+		<!-- second name not allowed -->
+		<Phone>602-698-8194</Phone>
+		<Phone>602-267-0404</Phone>
+		<Address _NearestAirport="Phoenix Sky Harbor International Airport">
+			<Number>800</Number>
+			<Street>North 44th Street</Street>
+			<City>Phoenix</City>
+			<State>AZ</State>
+			<Zip>85008</Zip>
+		</Address>
+	</Hotel>
+
+	
+	<!-- I have already covered the five erros i need to implemnt in the above hotels,but the remaining hoitels will also inlcude errors as well-->
+	<!--Hotel 5-->
+	<!-- This hotel has the error a missing attribute and missing phone element -->
+	<Hotel _Rating="8.9">
+		<Name>
+			Doubletree By Hilton Tucson Downtown Convention Center
+		</Name>
+		<!-- Missing phone-->
+		<Address> <!-- Missing nearest airport -->
+			<Number>280</Number>
+			<Street>South Church Ave</Street>
+			<City>Tucson</City>
+			<State>AZ</State>
+			<Zip>85701</Zip>
+		</Address>
+	</Hotel>
+
+
+	<!-- The rest dont inlcude ratings via assignment prompot-->
+	<!--Hotel 6-->
+	<!-- This hotel will have the error of no closing address tag and two names -->
+	<Hotel>
+		<Name>La Quinta Inn</Name>
+		<Name> NO SECOND NAME ALLOWED</Name>
+		<!-- second name not allowed -->
+		<Phone>520-573-3333</Phone>
+		<Address _NearestAirport="Wyndham Tuscon Airport">
+			<Number>7001</Number>
+			<Street>South Tucson Boulevard</Street>
+			<City>Tucson</City>
+			<State>AZ</State>
+			<Zip>85706</Zip>
+		<!-- Missing closing tag -->
+	</Hotel>
+	<!--Hotel 7, containes two phone numbers -->
+	<!-- tHIS HOTEL HAS THE ERROR of a missing attribute, missing phone number, nmo adrerss clsoing tag, and two names-->
+	<Hotel>
+		<Name>Embassy Suites</Name>
+		<Name>Random Hotel</Name> <!-- second name not allowed-->
+		<!-- no phone number-->
+		<Address> <!-- Missing nearest airport -->
+			<Number>6551</Number>
+			<Street>East Speedway Boulevard</Street>
+			<City>Tucson</City>
+			<State>AZ</State>
+			<Zip>85710</Zip>
+		<!-- Missing closing tag for address -->
+	</Hotel>
+
+	<!--Hotel 8, goig to add hotels from out of state but on the west coast from here -->
+	<!-- This has the error of no clsoing tag and no required attribute-->
+	<Hotel>
+		<Name>Hyatt House</Name>
+		<Phone>866-262-4215</Phone>
+		<Address>
+			<!-- Missing nearest airport -->
+			<Number>5959</Number>
+			<Street>West Century Blvd</Street>
+			<City>Los Angeles</City>
+			<State>CA</State>
+			<Zip>90045</Zip>
+		<!-- Missing closing tag -->
+	</Hotel>
+
+	<!--Hotel 9-->
+	<!-- tHIS HTOEL WILL HAVE THE ERROR OF A MISSING pHONE LEMENT AND MISSING REUIRED ATTRIBVYR-->
+	<Hotel>
+		<Name>Homewood Suites</Name>
+		<!-- mISSING PHONE LEMENT -->
+		<Address>
+			<!-- Missing nearest airport -->
+			<Number>423</Number>
+			<Street>West 300 South</Street>
+			<City>Salt Lake City</City>
+			<State>UT</State>
+			<Zip>84101</Zip>
+		</Address>
+	</Hotel>
+
+	<!--Hotel 10-->
+	<!-- cONTAIN THE ERROR OF A DOUBLE NAME AND MISING PHONE ELEMENT-->
+	<Hotel>
+		<Name>Sheraton Suites</Name>
+		<Name>ALONZOS INN</Name>
+		<!-- second name not allowed-->
+		<!-- MISSING PHONE ELEMENT-->
+		<Address _NearestAirport="Dallas Love Field Airport">
+			<Number>2101</Number>
+			<Street>North Stemmons Freeway</Street>
+			<City>Dallas</City>
+			<State>TX</State>
+			<Zip>75207</Zip>
+		</Address>
+	</Hotel>
+</Hotel>
+
